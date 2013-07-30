@@ -23,7 +23,6 @@ public class UserManagerService implements UserManager
 
 	public UserResponse fetchUserById(UserRequest request)
 	{
-		System.out.println("fetchUserById");
 		UserResponse response = new UserResponse();
 
 		try
@@ -41,7 +40,6 @@ public class UserManagerService implements UserManager
 
 	public UserResponse fetchAllUsers(UserRequest request)
 	{
-		System.out.println("fetchAllUsers");
 		UserResponse response = new UserResponse();
 
 		try

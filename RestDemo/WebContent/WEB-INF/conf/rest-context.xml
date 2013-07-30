@@ -19,20 +19,22 @@
         </cxf:features>
     </cxf:bus>
 
-	<!-- ========================= BAS DEFINITIONS REST Services======================== -->
-	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
-  	<jaxrs:server id="countyBASREST" address="/rest/UserManager">
-  		<jaxrs:serviceBeans><ref bean="userManagerService"/></jaxrs:serviceBeans>
-  		<jaxrs:providers>
-			<ref bean='jsonProvider' />
-		</jaxrs:providers>
-  	</jaxrs:server>
-
+	<bean id="userDao" class="com.dreamsyssoft.demo.rest.dao.impl.UserManagerMemoryDao">
+	</bean>
 
 	<bean id="userManagerService" class="com.dreamsyssoft.demo.rest.services.impl.UserManagerService">
 		<property name="userDao" ref="userDao"/>
 	</bean>
 
-	<bean id="userDao" class="com.dreamsyssoft.demo.rest.dao.impl.UserManagerMemoryDao">
-	</bean>
+	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+	
+  	<jaxrs:server id="userManagerREST" address="/rest/UserManager">
+  		<jaxrs:serviceBeans>
+  			<ref bean="userManagerService"/>
+  		</jaxrs:serviceBeans>
+  		<jaxrs:providers>
+			<ref bean='jsonProvider' />
+		</jaxrs:providers>
+  	</jaxrs:server>
+
 </beans>
