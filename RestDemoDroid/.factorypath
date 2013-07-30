@@ -1,0 +1,6 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/RestDemoDroid/aa-required-libs/android-1.6_r2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/RestDemoDroid/aa-required-libs/androidannotations-3.0-SNAPSHOT.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/RestDemoDroid/aa-required-libs/androidannotations-api-3.0-SNAPSHOT.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/RestDemoDroid/aa-required-libs/codemodel-2.4.1.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

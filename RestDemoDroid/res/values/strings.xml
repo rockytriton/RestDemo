@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RestDemoDroid</string>
+    <string name="action_add_user">Add User</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
